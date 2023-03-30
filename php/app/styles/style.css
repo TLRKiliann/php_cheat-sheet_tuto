@@ -1,0 +1,39 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background: #242424;
+	color: lightgreen;
+}
+
+a {
+	text-decoration: none;
+	color: yellow;
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	background: #424242;
+	border-bottom: 1px solid #ffffff7A;
+}
+
+.navbar ul {
+	width: 100%;
+	display: flex;
+	justify-content: right;
+}
+
+.navbar li {
+	width: 10%;
+	margin-right: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 1.4rem;
+}
+
+.navbar a {
+	color: lightgreen;
+}
