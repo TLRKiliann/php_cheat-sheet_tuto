@@ -2,7 +2,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	background: #242424;
+	background: #181818;
 	color: lightgreen;
 }
 
@@ -14,7 +14,7 @@ a {
 .navbar {
 	width: 100%;
 	display: flex;
-	background: #424242;
+	background: #000;
 	border-bottom: 1px solid #ffffff7A;
 }
 
@@ -35,5 +35,65 @@ a {
 }
 
 .navbar a {
+	color: lightgreen;
+}
+
+.about--class {
+	margin-bottom: 100px;
+}
+
+.contact--class {
+	margin-bottom: 100px;
+}
+
+main {
+	margin: 20px;
+}
+
+#txta--service {
+	background: #000;
+	color: cyan;
+}
+
+#txta--about {
+	background: #000;
+	color: cyan;
+}
+
+#txta--contact {
+	background: #000;
+	color: cyan;
+}
+
+.div--link {
+	margin-bottom: 60px;
+}
+
+footer {
+	position: fixed;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0px 0px;
+	bottom: 0px;
+	z-index: 1;
+	background: #000;
+	border-top: 1px solid #ffffff7A;
+	font-size: 1.4rem;
+}
+
+.footer--nav {
+	width: auto;
+	display: flex;
+	margin: 10px 0px;
+}
+
+.footer--nav li {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.footer--nav a {
 	color: lightgreen;
 }

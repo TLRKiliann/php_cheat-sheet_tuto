@@ -1,7 +1,15 @@
-<?php $title = "New title";
+<?php 
+$name = 'Esteban';
+setcookie('user', $name, time() + 60*60*24*30);
+//var_dump($_COOKIE['user']);
+
+session_start();
+$_SESSION['admin'] = 'koalatree';
+
+$title = "New title";
 $style = "styles/style.css";
 $favicon = "images/favicon.png";
-$somevar = "Je suis la var du footer";
+$footervar = "Home";
 
 $home = "index.php";
 $service = "components/service.php";
@@ -21,12 +29,14 @@ $contact = "components/contact.php";
       <?php require 'components/navbar.php' ?>
     </nav>
 
-    <h1>Hello Esteban !</h1>
-    <h2>Very nice ! no ?</h2>
-
-    <div>
-      <a href="components/service.php">Go to service page !</a>
-    </div>
+    <main>
+      <h1>Home</h1>
+      <h2>Welcome on my php website !</h2>
+      <p style="color: orange;">On this page a session & cookie are created. Find them back on contact page !</p>
+      <div>
+        <a href="components/service.php">Go to service page !</a>
+      </div>
+    </main>
 
     <footer>
       <?php require 'components/footer.php'; ?>

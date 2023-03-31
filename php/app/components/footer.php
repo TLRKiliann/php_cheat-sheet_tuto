@@ -1,8 +1,14 @@
-<?php $somevar; ?>
+<?php $footervar; ?>
 
-<nav>
-	<p>
-		<?php echo $somevar; ?>
-	</p>
+<nav class="footer--nav">
+	<li>
+		<a><?php echo $footervar; ?></a>
+	</li>
+	<li>
+		<a><?php echo $footervar; ?></a>
+	</li>
+	<li>
+		<a><?php echo $footervar; ?></a>
+	</li>
 </nav>
 

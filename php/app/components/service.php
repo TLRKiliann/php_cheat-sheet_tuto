@@ -1,7 +1,7 @@
 <?php $title = "Second title";
 $style = "../styles/style.css";
 $favicon = "../images/favicon.png";
-$somevar = "Je suis service var du footer";
+$footervar = "Service";
 
 $home = '../index.php';
 $service = 'service.php';
@@ -21,13 +21,20 @@ $contact = 'contact.php';
       <?php require 'navbar.php' ?>
     </nav>
     
-    <h1>Now, you are on second page !</h1>
-    <h2>Good job !!!</h2>
-    
-    <div>
-      <a href="../index.php">Go to Home !</a>
-    </div>
-    
+    <main>
+      <h1>Service</h1>
+      
+      <h2>$_SERVER = supervariable</h2>
+
+      <textarea id="txta--service" name="txta--service" rows="35" cols="150">
+        <?php print_r($_SERVER); ?>
+      </textarea>
+      
+      <div class="div--link">
+        <a href="../index.php">Go to Home !</a>
+      </div>
+    </main>
+
     <footer>
       <?php require 'footer.php'; ?>
     </footer>

@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $home = '../index.php';
 $service = 'service.php';
 $about = 'about.php';
@@ -8,7 +10,9 @@ $contact = 'contact.php';
 $title = "Contact";
 $style = "../styles/style.css";
 $favicon = "../images/favicon.png";
-$somevar = "Je suis contact footer";
+$footervar = "Contact";
+
+//print_r($_SESSION);
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +28,22 @@ $somevar = "Je suis contact footer";
       <?php require 'navbar.php'; ?>
     </nav>
 
-    <h1>Contact</h1>
+    <main>
+      <h1 class="contact--class">Contact</h1>
+
+      <p>$_SESSION</p>
+
+      <textarea id="txta--contact" name="txta--contact" rows="1" cols="40">
+        <?php print_r($_SESSION['admin']); ?>
+      </textarea>
+
+      <p>$_COOKIE</p>
+
+      <textarea id="txta--contact" name="txta--contact" rows="1" cols="40">
+        <?php print_r($_COOKIE['user']); ?>
+      </textarea>
+
+    </main>
 
     <footer>
       <?php require 'footer.php'; ?>
